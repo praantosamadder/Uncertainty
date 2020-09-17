@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1260b651-3cdb-4b42-b5c9-1ace4c82acb5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hVXwrEgIDbBq6qQdmGW3afEpVH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\praan\WebstormProjects\Line of Best Fit" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1260b651-3cdb-4b42-b5c9-1ace4c82acb5" name="Default Changelist" comment="" />
+      <created>1600097474967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600097474967</updated>
+      <workItem from="1600097476891" duration="1544000" />
+      <workItem from="1600140943275" duration="135000" />
+      <workItem from="1600141194849" duration="15531000" />
+      <workItem from="1600182033004" duration="4233000" />
+      <workItem from="1600188371669" duration="2708000" />
+      <workItem from="1600269707497" duration="12482000" />
+      <workItem from="1600316097169" duration="5635000" />
+      <workItem from="1600341355937" duration="7715000" />
+      <workItem from="1600355561880" duration="13445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="569" y="284" key="#Configure_Path_Variables" timestamp="1600141232409">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="569" y="284" key="#Configure_Path_Variables/0.0.1536.864@0.0.1536.864" timestamp="1600141232409" />
+    <state x="438" y="210" key="EditFileWatcherDialog" timestamp="1600141023096">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="438" y="210" key="EditFileWatcherDialog/0.0.1536.864@0.0.1536.864" timestamp="1600141023096" />
+    <state x="635" y="330" key="Github.ShareDialog" timestamp="1600372650272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="635" y="330" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1600372650272" />
+    <state x="556" y="134" key="Github.UntrackedFilesDialog" timestamp="1600372680868">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="556" y="134" key="Github.UntrackedFilesDialog/0.0.1536.864@0.0.1536.864" timestamp="1600372680868" />
+    <state x="277" y="77" key="SettingsEditor" timestamp="1600140960984">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1600140960984" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1600370681138">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1600370681138" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1600190069615">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1600190069615" />
+  </component>
+</project>
