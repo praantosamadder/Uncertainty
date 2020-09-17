@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+
+.left-panel {
+    height:95vh;
+    width:300px;
+    /*background: #efefef;*/
+    float:left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.top-nav-bar {
+    height: 5vh;
+    text-align: center;
+    background-color: #262626;
+    color: white;
+}
+
+.container {
+    width:100vw;
+    height:95vh;
+}
+
+.coordinates-table {
+    margin-top: 100px;
+}
+
+.coordinates-table-row {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.coordinates-col-x {
+    position: relative;
+    place-self: center;
+}
+
+.coordinates-col-y {
+    place-self: center;
+    position: relative;
+}
+
+
+.right-panel {
+    width:auto;
+    height: 95vh;
+    background:white;
+    overflow:hidden;
+}
+
+/*  BUTTONS   */
+
+.add-row-btn {
+    height: 30px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    padding: 4px 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+.add-row-btn:hover {
+    background-color: cornflowerblue;
+}
+
+.delete-one-btn {
+    height: 30px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+.delete-one-btn:hover {
+    background-color: cornflowerblue;
+}
+
+/*  INPUT FIELDS    */
+
+.input-y {
+    background-color: rgb(240, 242, 245);
+    width: 125px;
+    text-align: center;
+    outline: none;
+    border-radius: 32px;
+    border-color: transparent;
+    margin-right: -6px;
+    padding: 3px 4px 3px 4px;
+}
+
+.input-x {
+    background-color: rgb(240, 242, 245);
+    width: 125px;
+    text-align: center;
+    outline: none;
+    border-radius: 32px;
+    border-color: transparent;
+    margin-left: -6px;
+    padding: 3px 4px 3px 4px;
+}
