@@ -1,3 +1,5 @@
+// ARRAY PROTOTYPES
+
 Array.prototype.square = function () {
     return this.map(x => x ** 2)
 }
@@ -9,7 +11,7 @@ Array.prototype.maxVal = function() {
             if (this[it] > max) {
                 max = this[it]
             }
-        } else throw TypeError("max value should be called on arrays containing only numbers")
+        } else throw TypeError("Function can be called on arrays that contain only numbers")
     }
     return max
 }
@@ -21,7 +23,7 @@ Array.prototype.minVal = function() {
             if (this[it] < min) {
                 min = this[it]
             }
-        } else throw TypeError("min value should be called on arrays containing numbers only")
+        } else throw TypeError("Function can be called on arrays that contain only numbers")
     }
     return min
 }
@@ -35,10 +37,12 @@ Array.prototype.maxIndex = function() {
                 max = this[it]
                 index = it
             }
-        } else throw TypeError("maxIndex() should be called on arrays containing numbers")
+        } else throw TypeError("Function can be called on arrays that contain only numbers")
     }
     return index
 }
+
+// NUMBER PROTOTYPES
 
 Number.prototype.toDegree = function () {
     return Math.atan(this.valueOf()) * 180 / Math.PI

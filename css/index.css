@@ -3,6 +3,10 @@ html, body {
     height: 100vh;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+}
+
 .left-panel {
     height:95vh;
     width:300px;
@@ -48,7 +52,8 @@ html, body {
     width:auto;
     height: 95vh;
     background:white;
-    overflow:hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /*  BUTTONS   */

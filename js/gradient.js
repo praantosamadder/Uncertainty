@@ -1,4 +1,5 @@
-class Gradient {
+class Graph
+{
     constructor
     (
         inputList,
@@ -10,12 +11,12 @@ class Gradient {
         let xArrayUnc = []
         let yArrayUnc = []
 
-        // declare prototypes
-
         function mean(list) {
             let sum = 0;
             for (let it = 0; it <= (list.length - 1); it++) {
-                sum += list[it]
+                if (typeof list[it] === "number") {
+                    sum += list[it]
+                } else throw TypeError("Function can be called on arrays that contain only numbers")
             }
             return sum/(list.length)
         }
@@ -28,7 +29,7 @@ class Gradient {
                 }
                 return newList
             } else {
-                throw RangeError("Both inputs must be of the same length")
+                throw RangeError("Number of x-coordinates must be equal to number of y-coordinates")
             }
         }
 
@@ -38,7 +39,7 @@ class Gradient {
                 let st2 = Math.pow(mean(xList), 2) - mean(xList.square());
                 return st1/st2
             } else {
-                throw RangeError("Both inputs must be of same length")
+                throw RangeError("Number of x-coordinates must be equal to number of y-coordinates")
             }
         }
 
@@ -100,13 +101,30 @@ class Gradient {
             }
         }
 
+        function constantWorstFit(xList, yList, xUncertainty, yUncertainty, mw) {
+            if (xList.length === yList.length) {
+                let x2 = xList.maxVal() + xUncertainty[xList.maxIndex()];
+                let y2 = yList.maxVal() + yUncertainty[yList.maxIndex()];
+
+                return y2 - mw * x2
+
+            } else throw RangeError("Number of x-coordinates must be equal to number of y-coordinates")
+        }
+
         convertTupleToList(inputList, fractionDigits)
         // Outputs
 
-        this.gradBest = gradientBestFit(xArray, yArray)
-        this.cBest = yIntercept(xArray, yArray, this.gradBest)
-        this.gradWorst = gradientWorstFit(xArray, yArray, xArrayUnc, yArrayUnc)
-        this.gradUncertainty = gradientUncertainty(this.gradBest, this.gradWorst)
+        this.gradBestFitLine = gradientBestFit(xArray, yArray)
+        this.cBestFitLine = yIntercept(xArray, yArray, this.gradBestFitLine)
+        this.gradWorstFitLine = gradientWorstFit(xArray, yArray, xArrayUnc, yArrayUnc)
+        this.gradUncertainty = gradientUncertainty(this.gradBestFitLine, this.gradWorstFitLine)
+        this.cWorstFit = constantWorstFit(xArray, yArray, xArrayUnc, yArrayUnc, this.gradWorstFitLine)
+        this.cUncertainty = gradientUncertainty(this.cBestFitLine, this.cWorstFit)
+
+        this.constant = this.cBestFitLine.toFixed(fractionDigits) + " ± " + this.cUncertainty.toFixed(fractionDigits)
+        this.gradient = this.gradBestFitLine.toFixed(fractionDigits) + " ± " + this.gradUncertainty.toFixed(fractionDigits)
+
+        this.equation = "y = " + this.gradBestFitLine.toFixed(fractionDigits) + "x" + " + " + this.cBestFitLine.toFixed(fractionDigits)
 
     }
 }
