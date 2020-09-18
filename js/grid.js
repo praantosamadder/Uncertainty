@@ -35,10 +35,6 @@ class Grid
 
             let perSquareHeight = hParam * 10;
 
-            // Vertical lines
-            //
-            // let line = draw.line(0, perSquareHeight, 0, 0).move(xIterator, y)
-            // line.stroke({ color: graphLineColors.lColor, width: lWidth, linecap: linecap})
             xIterator += wParam
 
             for (let it = 0; it < 4; it++) {
@@ -56,9 +52,6 @@ class Grid
                 line.stroke({ color: graphLineColors.sColor, width: sWidth, linecap: linecap})
                 xIterator += wParam;
             }
-
-            let line2 = draw.line(0, perSquareHeight, 0, 0).move(xIterator, y)
-            line2.stroke({ color: graphLineColors.lColor, width: lWidth, linecap: linecap})
 
             let perSquareWidth = wParam * 10
 
@@ -88,13 +81,16 @@ class Grid
             let line = draw.line(0, perSquareHeight, 0, 0).move(x, y)
             line.stroke({ color: graphLineColors.lColor, width: lWidth, linecap: linecap})
 
+            let line2 = draw.line(0, perSquareHeight, 0, 0).move(xIterator, y)
+            line2.stroke({ color: graphLineColors.lColor, width: lWidth, linecap: linecap})
+
             let lineV2 = draw.line(0, 0, perSquareWidth, 0).move(x, yIterator)
             lineV2.stroke({color: graphLineColors.lColor, width: lWidth, linecap: linecap})
         }
 
         let n = 20;
         while (n < maximumHeight) {
-            let n2 = 20;
+            let n2 = 30;
             while (n2 < maximumWidth) {
                 oneSquare(n2, n, 6, 6, 0.7, 1.0,1.5)
                 n2 += 60
