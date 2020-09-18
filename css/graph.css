@@ -1,0 +1,17 @@
+.main-graph-output {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.35);
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+.main-graph-output:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
